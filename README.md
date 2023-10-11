@@ -28,7 +28,7 @@ The API consists of these following endpoints
            {
             "lname":"hortizuela",
              "fname":"manny"
-           }<br>
+           }
      ```
 3.  Print  the name<br>
      ○ Endpoint /printName<br>
@@ -49,7 +49,7 @@ The API consists of these following endpoints
            {
              "lname":"wick",
               "fname":"john"
-           }<br>
+           }
      ```
 6. Delete the name<br>
      ○ Endpoint /deleteName<br>
@@ -59,7 +59,7 @@ The API consists of these following endpoints
      ```json
            {
              "id":1
-           }<br>
+           }
      ```
 ## Request Payload
 ```POST/postName```<br>
@@ -69,7 +69,7 @@ The API consists of these following endpoints
             {
              "lname":"hortizuela",
              "fname":"manny"
-            } <br>
+            } 
    ```
  ```PUT/updateName/{id}```<br>
        • Endpoint for updating name into the database<br>
@@ -79,7 +79,7 @@ The API consists of these following endpoints
              "id" : 1,
              "lname":"wick",
              "fname":"john"
-            }<br>
+            }
    ```
 ```DELETE/deleteName```<br>
        • Endpoint for deleting name into the database<br>
@@ -87,7 +87,7 @@ The API consists of these following endpoints
    ```json
             {
              "id":1
-            }<br>
+            }
    ```
 ## Response
 The API responses follow a JSON format and includes these following structures:<br>
@@ -96,14 +96,14 @@ The API responses follow a JSON format and includes these following structures:<
       {
          "status": "success",
          "data": null
-      }<br>
+      }
   ```
    • Error Response:<br>
    ```json
       {
          "status": "error",
          "message": "Error message"
-      }<br>
+      }
    ```
 ## Usage
 Here are instructions how to use the endpoints of the API<br>
@@ -119,7 +119,7 @@ Open your Postman Software<br>
        {
          "lname":"hortizuela",
          "fname":"manny"
-       } <br>
+       } 
 ```
    ![image](https://github.com/DavidJustine/api/assets/147040193/94063373-4f6d-4b58-9929-c6dff21c4b46)<br>
    it should look like this<br>
@@ -135,7 +135,7 @@ Open your Postman Software<br>
          "id": "1",
          "lname":"hortizuela",
          "fname":"manny"
-       }<br>
+       }
 ```
  ![Screenshot 2023-10-11 223401](https://github.com/DavidJustine/api/assets/147040193/4a5b1c6a-1417-4fbb-b559-6ba1947b9e54)<br>
  it should look like this<br>
@@ -149,7 +149,7 @@ Open your Postman Software<br>
 ```json
        {
          "id": "1"
-       }<br>
+       }
 ```
  ![Screenshot 2023-10-11 221259](https://github.com/DavidJustine/api/assets/147040193/76724050-6f6c-4715-98e5-c048f7b137b2)<br>
 it should look like this<br>
