@@ -130,7 +130,6 @@ __updateName__<br>
 3. Insert the data in a JSON format in the request payload<br>
 ```json
        {
-         "id": "1",
          "lname":"hortizuela",
          "fname":"manny"
        }
