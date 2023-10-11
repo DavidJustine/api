@@ -109,7 +109,7 @@ Here are instructions how to use the endpoints of the API<br>
 (DB name: Demo, Table name: names, table contents: id, lname,fname)<br>
 
 Open your Postman Software<br>
-```postName```<br>
+__postName__<br>
 1. Set your method into POST<br>
 2. Set your URL into 127.0.0.1/api/public/postName<br>
 3. Insert the name in a JSON format in the request payload<br>
@@ -124,7 +124,7 @@ Open your Postman Software<br>
 4. click Send.<br>
 
 
-```updateName```<br>
+__updateName__<br>
 1. Set your method into PUT<br>
 2. Set your URL into 127.0.0.1/api/public/updateName/{id}<br>
 3. Insert the data in a JSON format in the request payload<br>
@@ -140,7 +140,7 @@ Open your Postman Software<br>
 4. Click send.<br>
 
 
-```deleteName```<br>
+__deleteName__<br>
 1. Set your method into DELETE<br>
 2. Set your URL into 127.0.0.1/api/public/deleteName<br>
 3. Delete the data in a JSON format in the request payload<br>
