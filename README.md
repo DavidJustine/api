@@ -19,137 +19,137 @@ This API allows the user to execute a basic CRUD(Create, Read, Update & Delete) 
 ## API Endpoints
 The API consists of these following endpoints
 
-1. Inserting Name
-     ○ Endpoint /postName
-     ○ Method: POST
-     ○ Description: Insert a name in the database
-     ○ Request Payload:
+1. Inserting Name<br>
+     ○ Endpoint /postName<br>
+     ○ Method: POST<br>
+     ○ Description: Insert a name in the database<br>
+     ○ Request Payload:<br>
            {
             "lname":"hortizuela",
              "fname":"manny"
-           }
+           }<br>
    
-3.  Print  the name
-     ○ Endpoint /printName
-     ○ Method: POST
-     ○ Description: Print a name
+3.  Print  the name<br>
+     ○ Endpoint /printName<br>
+     ○ Method: POST<br>
+     ○ Description: Print a name<br>
     
-4. Get Name
-     ○ Endpoint /getName/{fname}/{lname}
-     ○ Method: GET
-     ○ Description: retrieve and display the name entered in the URL
+4. Get Name<br>
+     ○ Endpoint /getName/{fname}/{lname}<br>
+     ○ Method: GET<br>
+     ○ Description: retrieve and display the name entered in the URL<br>
 
-5. Update the Name
-     ○ Endpoint /updateName/{id}
-     ○ Method: PUT
-     ○ Description: Update a name in the database
-     ○ Request Payload:
+5. Update the Name<br>
+     ○ Endpoint /updateName/{id}<br>
+     ○ Method: PUT<br>
+     ○ Description: Update a name in the database<br>
+     ○ Request Payload:<br>
            {
              "lname":"wick",
               "fname":"john"
-           }
+           }<br>
 
-6. Delete the name
-     ○ Endpoint /deleteName
-     ○ Method: DELETE
-     ○ Description: Delete a name in the database
-     ○ Request Payload:
+6. Delete the name<br>
+     ○ Endpoint /deleteName<br>
+     ○ Method: DELETE<br>
+     ○ Description: Delete a name in the database<br>
+     ○ Request Payload:<br>
            {
              "id":1
-           }
+           }<br>
 
 ## Request Payload
-```POST/postName```
-      • Endpoint for inserting name into the database
-      • Request payload structure (JSON)
+```POST/postName```<br>
+      • Endpoint for inserting name into the database<br>
+      • Request payload structure (JSON)<br>
             {
              "lname":"hortizuela",
              "fname":"manny"
-            } 
- ```PUT/updateName/{id}```
-       • Endpoint for updating name into the database
-       • Request payload structure (JSON)
+            } <br>
+ ```PUT/updateName/{id}```<br>
+       • Endpoint for updating name into the database<br>
+       • Request payload structure (JSON)<br>
             {
              "id" : 1,
              "lname":"wick",
              "fname":"john"
-            }
-```DELETE/deleteName```
-       • Endpoint for deleting name into the database
-       • Request payload structure (JSON)
+            }<br>
+```DELETE/deleteName```<br>
+       • Endpoint for deleting name into the database<br>
+       • Request payload structure (JSON)<br>
             {
              "id":1
-            }
+            }<br>
 
 ## Response
-The API responses follow a JSON format and includes these following structures:
-   • Success Response:
+The API responses follow a JSON format and includes these following structures:<br>
+   • Success Response:<br>
       {
          "status": "success",
          "data": null
-      }
+      }<br>
 
-   • Error Response:
+   • Error Response:<br>
       {
          "status": "error",
          "message": "Error message"
-      }
+      }<br>
      
 ## Usage
-Here are instructions how to use the endpoints of the API
-(Make sure that you have created a Database)
-(DB name: Demo, Table name: names, table contents: id, lname,fname)
+Here are instructions how to use the endpoints of the API<br>
+(Make sure that you have created a Database)<br>
+(DB name: Demo, Table name: names, table contents: id, lname,fname)<br>
 
-Open your Postman Software 
-```postName```
-1. Set your method into POST
-2. Set your URL into 127.0.0.1/api/public/postName
-3. Insert the name in a JSON format in the request payload
+Open your Postman Software<br>
+```postName```<br>
+1. Set your method into POST<br>
+2. Set your URL into 127.0.0.1/api/public/postName<br>
+3. Insert the name in a JSON format in the request payload<br>
        {
          "lname":"hortizuela",
          "fname":"manny"
-       } 
-   ![image](https://github.com/DavidJustine/api/assets/147040193/94063373-4f6d-4b58-9929-c6dff21c4b46)
-   it should look like this
-4. click Send.
+       } <br>
+   ![image](https://github.com/DavidJustine/api/assets/147040193/94063373-4f6d-4b58-9929-c6dff21c4b46)<br>
+   it should look like this<br>
+4. click Send.<br>
 
 
-```updateName```
-1. Set your method into PUT
-2. Set your URL into 127.0.0.1/api/public/updateName/{id}
-3. Insert the data in a JSON format in the request payload
+```updateName```<br>
+1. Set your method into PUT<br>
+2. Set your URL into 127.0.0.1/api/public/updateName/{id}<br>
+3. Insert the data in a JSON format in the request payload<br>
        {
          "id": "1",
          "lname":"hortizuela",
          "fname":"manny"
-       }
- ![Screenshot 2023-10-11 223401](https://github.com/DavidJustine/api/assets/147040193/4a5b1c6a-1417-4fbb-b559-6ba1947b9e54)
- it should look like this
-4. Click send.
+       }<br>
+ ![Screenshot 2023-10-11 223401](https://github.com/DavidJustine/api/assets/147040193/4a5b1c6a-1417-4fbb-b559-6ba1947b9e54)<br>
+ it should look like this<br>
+4. Click send.<br>
 
 
-```deleteName```
-1. Set your method into DELETE
-2. Set your URL into 127.0.0.1/api/public/deleteName
-3. Delete the data in a JSON format in the request payload
+```deleteName```<br>
+1. Set your method into DELETE<br>
+2. Set your URL into 127.0.0.1/api/public/deleteName<br>
+3. Delete the data in a JSON format in the request payload<br>
        {
          "id": "1"
-       }
- ![Screenshot 2023-10-11 221259](https://github.com/DavidJustine/api/assets/147040193/76724050-6f6c-4715-98e5-c048f7b137b2)
-it should look like this
-4. Click send.
+       }<br>
+ ![Screenshot 2023-10-11 221259](https://github.com/DavidJustine/api/assets/147040193/76724050-6f6c-4715-98e5-c048f7b137b2)<br>
+it should look like this<br>
+4. Click send.<br>
 
 
 ## License
- ○ Apache License 2.0
- ○ OrgStructure
+ ○ Apache License 2.0<br>
+ ○ OrgStructure<br>
 
 
  
 
 
 ## Contributors
-David Justine A. Javillonar - Initiated and created and pushed Git repository
+David Justine A. Javillonar - Initiated and created and pushed Git repository<br>
 X'tynn J'ann S. Orpilla - Executed pulling the git repository from the github
 
 
@@ -157,8 +157,8 @@ X'tynn J'ann S. Orpilla - Executed pulling the git repository from the github
 
 
 ## Contact Us
-David Justine A. Javillonar | https://github.com/DavidJustine
-Email: davidjustine.javillonar@student.dmmmsu.edu.ph
+David Justine A. Javillonar | https://github.com/DavidJustine<br>
+Email: davidjustine.javillonar@student.dmmmsu.edu.ph<br>
 
-X'tynn J'ann S. Orpilla | https://github.com/TynOrpilla
+X'tynn J'ann S. Orpilla | https://github.com/TynOrpilla<br>
 Email: xtynnjann.orpilla@student.dmmmsu.edu.ph
