@@ -162,8 +162,8 @@ it should look like this<br>
 
 
 ## Contributors
-David Justine A. Javillonar - Initiated and created and pushed Git repository<br>
-X'tynn J'ann S. Orpilla - Executed pulling the git repository from the github
+David Justine A. Javillonar - Initiated and created, pushed & pulled Git repository<br>
+X'tynn J'ann S. Orpilla - Executed cloning the git repository from the github
 
 
  
